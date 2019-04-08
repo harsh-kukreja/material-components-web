@@ -51,23 +51,38 @@
   }
 
   .mdc-datatable__header-row {
-    @include mdc-feature-targets($feat-structure) {
-      font-weight: 500;
-    }
-
     @include mdc-typography(body2, $query: $query);
+
+    border: 1px solid #dadce0;
   }
 
+  .mdc-datatable__header-row-cell,
   .mdc-datatable__cell {
-    padding: 10px 6px;
+    padding: 5.5px 18px;
+    letter-spacing: .2px;
+  }
+
+  .mdc-datatable__header-row-cell {
+    letter-spacing: .25px;
   }
 
   .mdc-datatable__row {
-    border: 1px solid #DADCE0;
+    border: 1px solid #dadce0;
+
+    &:not(.mdc-datatable__row--selected):hover {
+      background-color: rgba(mdc-theme-prop-value(on-surface), .04);
+    }
   }
 
   .mdc-checkbox {
     display: none;
+  }
+
+  .mdc-datatable__header-row-cell {
+    @include mdc-feature-targets($feat-structure) {
+      font-weight: 500;
+      text-align: left;
+    }
   }
 }
 
