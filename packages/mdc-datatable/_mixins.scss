@@ -51,23 +51,19 @@
   }
 
   .mdc-datatable__header-row {
-    @include mdc-typography(body2, $query: $query);
-
-    border: 1px solid #dadce0;
+    border: 1px solid rgba(mdc-theme-prop-value(on-surface), .12);
   }
 
-  .mdc-datatable__header-row-cell,
   .mdc-datatable__cell {
+    @include mdc-typography(body2, $query: $query);
+
     padding: 5.5px 18px;
     letter-spacing: .2px;
   }
 
-  .mdc-datatable__header-row-cell {
-    letter-spacing: .25px;
-  }
-
   .mdc-datatable__row {
-    border: 1px solid #dadce0;
+    // border: 1px solid #dadce0;
+    border: 1px solid rgba(mdc-theme-prop-value(on-surface), .12);
 
     &:not(.mdc-datatable__row--selected):hover {
       background-color: rgba(mdc-theme-prop-value(on-surface), .04);
@@ -79,8 +75,11 @@
   }
 
   .mdc-datatable__header-row-cell {
+    @include mdc-typography(subtitle2, $query: $query);
+
     @include mdc-feature-targets($feat-structure) {
-      font-weight: 500;
+      padding: 5.5px 18px;
+      letter-spacing: .2px;
       text-align: left;
     }
   }
