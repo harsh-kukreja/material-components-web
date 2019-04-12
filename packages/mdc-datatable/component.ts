@@ -22,10 +22,10 @@
  */
 
 import {MDCComponent} from '@material/base/component';
+import {MDCCheckbox, MDCCheckboxFactory} from '@material/checkbox/component';
+import {MDCCheckboxFoundation} from '@material/checkbox/foundation';
 import {MDCDatatableAdapter} from './adapter';
 import {MDCDatatableFoundation} from './foundation';
-import {MDCCheckboxFoundation} from '@material/checkbox/foundation';
-import {MDCCheckbox, MDCCheckboxFactory} from '@material/checkbox/component';
 
 export class MDCDatatable extends MDCComponent<MDCDatatableFoundation> {
   initialize(checkboxFactory: MDCCheckboxFactory = (el) => new MDCCheckbox(el)) {

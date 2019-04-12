@@ -194,7 +194,10 @@
   }
 }
 
-@mixin mdc-datatable-cell-padding($leading-padding: $mdc-datatable-cell-leading-padding, $trailing-padding: $mdc-datatable-cell-trailing-padding, $query: mdc-feature-all()) {
+@mixin mdc-datatable-cell-padding(
+  $leading-padding: $mdc-datatable-cell-leading-padding,
+  $trailing-padding: $mdc-datatable-cell-trailing-padding,
+  $query: mdc-feature-all()) {
   .mdc-datatable__cell,
   .mdc-datatable__header-cell {
     padding-right: $trailing-padding;
