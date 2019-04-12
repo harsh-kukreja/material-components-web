@@ -20,12 +20,26 @@
 // THE SOFTWARE.
 //
 
-$mdc-datatable-text-color: on-surface !default;
-$mdc-datatable-selected-row-fill-color: #e8f0fe !default;
-$mdc-datatable-border-color: #DADCE0 !default;
+@import "@material/theme/functions";
+
 $mdc-datatable-fill-color: surface !default;
+$mdc-datatable-header-row-fill-color: surface !default;
+$mdc-datatable-row-fill-color: surface !default;
+$mdc-datatable-selected-row-fill-color: rgba(mdc-theme-prop-value(primary), .04) !default;
 
-$mdc-datatable-row-hover-opacity: .04 !default;
+$mdc-datatable-checked-icon-color: primary !default;
+$mdc-datatable-divider-color: rgba(mdc-theme-prop-value(on-surface), .12) !default;
+$mdc-datatable-divider-size: 1px !default;
+$mdc-datatable-row-hover-color: rgba(mdc-theme-prop-value(on-surface), .04) !default;
 
-$mdc-datatable-header-row-height: 40px !default;
-$mdc-datatable-row-height: 32px !default;
+$mdc-datatable-header-text-color: on-surface !default;
+$mdc-datatable-row-text-color: on-surface !default;
+
+$mdc-datatable-shape-radius: medium !default;
+$mdc-datatable-stroke-size: 1px !default;
+$mdc-datatable-stroke-color: rgba(mdc-theme-prop-value(on-surface), .12) !default;
+
+$mdc-datatable-header-row-height: 48px !default;
+$mdc-datatable-row-height: 48px !default;
+$mdc-datatable-cell-leading-padding: 5.5px !default;
+$mdc-datatable-cell-trailing-padding: 18px !default;

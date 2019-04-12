@@ -20,10 +20,6 @@
 // THE SOFTWARE.
 //
 
-@import "../../../../packages/mdc-dialog/mixins";
+@import "../../../../packages/mdc-datatable/mixins";
 @import "../../../../packages/mdc-theme/color-palette";
 @import "../mixins";
-
-.test-viewport {
-  background: none;
-}
