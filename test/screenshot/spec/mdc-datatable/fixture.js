@@ -22,5 +22,4 @@
  */
 
 window.mdc.testFixture.fontsLoaded.then(() => {
-  mdc.datatable.MDCDatatable.attachTo(document.querySelector('.mdc-datatable'));
 });
